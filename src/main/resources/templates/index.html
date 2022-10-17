@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+    <form action="/actuator/loggers/com.example.springbatchsample.config.BatchJobConfiguration" method="post">
+        Log Level
+        <select name="configuredLevel">
+            <option value = "TRACE">TRACE</option>
+            <option value = "DEBUG">DEBUG</option>
+            <option value = "INFO" selected>INFO</option>
+            <option value = "WARN ">WARN</option>
+            <option value = "ERROR ">ERROR</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
